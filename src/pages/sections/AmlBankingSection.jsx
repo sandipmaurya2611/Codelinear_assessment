@@ -22,7 +22,7 @@ const AsteriskIcon = () => (
 const AmlBankingSection = () => (
   <section
     id="aml-banking"
-    className="relative w-full overflow-hidden py-16 md:py-20"
+    className="relative w-full overflow-hidden pt-16 md:pt-20 pb-0"
     style={{ background: '#000D12' }}
   >
     {/* Scoped keyframes */}

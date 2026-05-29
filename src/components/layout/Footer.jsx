@@ -10,7 +10,12 @@ const ArrowIcon = ({ className = '' }) => (
     width="14" height="15" viewBox="0 0 14 15" fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={`text-[#00B4FD] transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0 ${className}`}
-    style={{ width: '13.57px', height: '14.5px' }}
+    style={{
+      width: '13.568845748901419px',
+      height: '14.504626274108942px',
+      transform: 'rotate(0deg)',
+      opacity: 1
+    }}
   >
     <path d="M1 7.5H13M13 7.5L7 1.5M13 7.5L7 13.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
@@ -19,18 +24,15 @@ const ArrowIcon = ({ className = '' }) => (
 const FooterLink = ({ name, href, arrowPosition = 'right' }) => (
   <a
     href={href || `#${name.replace(/\s+/g, '-').toLowerCase()}`}
-    className="group flex items-center gap-2 transition-colors duration-300 hover:opacity-100"
+    className="group flex items-center justify-between w-full transition-colors duration-300 hover:opacity-100"
     style={{
       fontFamily: "'Archivo', sans-serif",
       fontWeight: 400,
       fontSize: '16px',
-      lineHeight: '130%',
-      color: '#E9F4F9',
-      opacity: 0.7,
       textDecoration: 'none',
     }}
   >
-    {arrowPosition === 'left' && <ArrowIcon className="rotate-180" />}
+    {arrowPosition === 'left' && <ArrowIcon />}
     <span>{name}</span>
     {arrowPosition === 'right' && <ArrowIcon />}
   </a>
@@ -67,7 +69,15 @@ const AddressBlock = ({ title, address }) => (
 );
 
 const LinkColumn = ({ title, links, arrowPosition = 'right' }) => (
-  <div className="flex flex-col gap-4">
+  <div
+    className="flex flex-col"
+    style={{
+      width: '164.01904296875px',
+      height: '276px',
+      gap: '16px',
+      opacity: 1,
+    }}
+  >
     <h4
       style={{
         fontFamily: "'Archivo', sans-serif",
@@ -80,7 +90,7 @@ const LinkColumn = ({ title, links, arrowPosition = 'right' }) => (
     >
       {title}
     </h4>
-    <div className="flex flex-col gap-[10px]">
+    <div className="flex flex-col" style={{ gap: '16px' }}>
       {links.map((name) => (
         <FooterLink key={name} name={name} arrowPosition={arrowPosition} />
       ))}
@@ -113,7 +123,15 @@ const Footer = () => (
       <div className="w-full lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-8">
 
         {/* Column 1: London + Solutions */}
-        <div className="flex flex-col gap-10 md:gap-16">
+        <div 
+          className="flex flex-col"
+          style={{
+            width: '268.5060729980469px',
+            height: '504px',
+            opacity: 1,
+            gap: '128px'
+          }}
+        >
           <AddressBlock
             title="London"
             address="Linktia Infosystems Ltd – CB7, 26 Main Road Sundridge, TN14 6EP, England, United Kingdom."
@@ -149,7 +167,6 @@ const Footer = () => (
               'Core Team',
               'Brand Center',
             ]}
-            arrowPosition="left"
           />
         </div>
 
@@ -162,7 +179,6 @@ const Footer = () => (
           <LinkColumn
             title="Our Socials"
             links={['LinkedIn', 'X']}
-            arrowPosition="left"
           />
         </div>
       </div>

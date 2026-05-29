@@ -152,24 +152,6 @@ const FintechSection = () => (
 
       {/* Left column: heading */}
       <div className="flex flex-col gap-8 md:gap-12 w-full lg:w-[40%] lg:max-w-[463px]">
-        {/* "Insights" Button */}
-        <div
-          className="group hover:bg-white transition-all duration-300 w-[190px] h-[49px] rounded-[10px] border border-[#E9F4F9] flex items-center justify-center cursor-pointer"
-        >
-          <span
-            className="text-[#E9F4F9] group-hover:text-[#003ACE] transition-colors duration-300"
-            style={{
-              fontFamily: "'Chivo Mono', monospace",
-              fontWeight: 400,
-              fontSize: '15px',
-              lineHeight: '130%',
-              textTransform: 'uppercase',
-            }}
-          >
-            Insights
-          </span>
-        </div>
-
         {/* Headline */}
         <h2
           className="text-[26px] md:text-[32px] lg:text-[37px]"
@@ -184,6 +166,36 @@ const FintechSection = () => (
         >
           Get yourself up-to-speed on all the things happening in fintech
         </h2>
+
+        {/* "Insights" Button */}
+        <div
+          className="group hover:bg-white transition-all duration-300 flex items-center justify-center cursor-pointer"
+          style={{
+            width: '190px',
+            height: '49px',
+            gap: '8px',
+            borderRadius: '10px',
+            borderWidth: '1px',
+            borderColor: '#E9F4F9',
+            borderStyle: 'solid',
+            padding: '15px 59px',
+            opacity: 1,
+            boxSizing: 'border-box'
+          }}
+        >
+          <span
+            className="text-[#E9F4F9] group-hover:text-[#003ACE] transition-colors duration-300 whitespace-nowrap"
+            style={{
+              fontFamily: "'Chivo Mono', monospace",
+              fontWeight: 400,
+              fontSize: '15px',
+              lineHeight: '130%',
+              textTransform: 'uppercase',
+            }}
+          >
+            Insights
+          </span>
+        </div>
       </div>
 
       {/* Right column: cards */}
