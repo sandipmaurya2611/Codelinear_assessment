@@ -4,16 +4,11 @@ A premium, modern, and highly responsive landing page for digital banking and fi
 
 ## 🚀 Key Features
 
-- **Modern & Premium Design**: Incorporates glassmorphism, gradient accents, smooth micro-animations, and responsive layouts tailored for Fintech web platforms.
-- **Responsive Architecture**: Fully responsive design adapting beautifully across desktop, tablet, and mobile viewing environments.
-- **Modular Sections**: Built entirely with React functional components ensuring high maintainability. Key sections include:
-  - Hero Section
-  - Solutions / Cloud Banking
-  - Digital Banking & AML Compliance (Marquee / Moving Stripe Integration)
-  - Fintech Insights & News
-  - Paperless Branch Experience
-  - Responsive Footer with dynamic link routing.
-- **Optimized Performance**: Scaffolded with Vite for extremely fast Hot Module Replacement (HMR) and optimized production builds.
+- **Pixel-perfect implementation based on the provided Figma design**
+- **Fully responsive across desktop, tablet, and mobile devices**
+- **Reusable component architecture**
+- **Smooth interactions and animations**
+- **Performance optimized implementation**
 
 ## 💻 Tech Stack
 
